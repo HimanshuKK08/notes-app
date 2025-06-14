@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-y: hidden;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color:whitesmoke
+}
+
+.input {
+    text-align: center;
+    height: 30%;
+    color: whitesmoke;
+    display: flex;
+    height: min-content;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    background-color: rgb(57, 57, 57);
+    text-align: center;
+    width: 40%;
+    height: 5vh;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: whitesmoke;   
+}
+
+#detail {
+    font-size: 15px;
+    color: whitesmoke;
+    margin: 8px;
+    background-color: rgb(57, 57, 57);
+    resize: none;
+    width: 40%;
+    border-radius: 10px;    
+    height:8vh;
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    width: 20%;
+    background-color: rebeccapurple;
+    color: white;
+    margin: 10px;
+    margin-bottom: 40px;
+    padding: 8px; /* Add padding for better button size */
+    border-radius: 15px; /* Optional: Rounded corners */
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+button:hover {
+    background-color: indigo; /* Change color on hover */
+}
+
+.notes-container{
+    display: flex;
+    color: aliceblue;
+    gap: 20px;
+    padding: 10px;
+    text-align: justify;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.notes{
+    width: 20vw;
+    padding: 20px;
+    background-color: rgb(57, 57, 57);
+    border-radius: 10px;
+}
+h2{
+    margin-bottom: 15px;
+    font-size: large;
+}
+a{
+    font-size: large;
+    color: rgb(89, 89, 220);
+    margin-top: 10px;
+    /* display: block; */
+}
+.display{
+    padding: 15px;
+    /* background-color: white; */
+    color: white;
+    border-radius: 15px;
+    gap: 15px;
+    width: 500px;
+}
+#goBack{
+    font-size: larger;
+    color: black;
+    padding: 25px;
+}
+.fileName{
+    margin-top: 25px;
+    /* width: 100%; */
+    text-align: center;
+}
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

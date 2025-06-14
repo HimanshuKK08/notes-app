@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 50px;"> NoteNest</h1>
+    <!-- <br>  -->
+    <h4 style="text-align: center; font-style: italic;">"Where your thoughts find home"</h4>
+    <form action="/create" method="post">
+        <div class="input">
+            <input type="text" name="Title" id="title" placeholder="Enter Title" required><br>
+            <textarea name="Details" id="detail" placeholder="Enter Description" required></textarea>
+            <button>Note It</button>
+        </div>
+    </form>
+    <div class="notes-container">
+        <% if(files.length === 0){ %>
+        <p>No Notes Added yet</p>
+        <% } else { %>
+            <% files.forEach((note)=>{%>
+                <div class="notes">
+                    <h2><%= note %></h2>
+                    <div class="links">
+                        <a href="/files/<%= note%>">Click To Read</a>
+                        <a href="/delete/<%= note%>" style="color: red;">Delete</a>
+                    </div>
+                </div>
+            <% }) %>
+        <% } %>
+    </div>
+
+</body>
+</html>
